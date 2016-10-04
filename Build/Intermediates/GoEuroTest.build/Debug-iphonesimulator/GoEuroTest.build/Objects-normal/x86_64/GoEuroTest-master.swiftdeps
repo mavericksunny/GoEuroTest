@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "699efdf82fc35d98857c498846e19e84"
+build_time: [528916462, 945020000]
+inputs:
+  "/Users/Sunny/Workspace/Samplecodes/GoEuroTest/GoEuroTest/AppDelegate.swift": [528916024, 0]
+  "/Users/Sunny/Workspace/Samplecodes/GoEuroTest/GoEuroTest/Bus/BusViewController.swift": [528916337, 0]
+  "/Users/Sunny/Workspace/Samplecodes/GoEuroTest/GoEuroTest/Flight/FlightViewController.swift": [528916284, 0]
+  "/Users/Sunny/Workspace/Samplecodes/GoEuroTest/GoEuroTest/Train/TrainViewController.swift": [528916457, 0]

@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A3CC9E131DA419380006369F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E121DA419380006369F /* AppDelegate.swift */; };
-		A3CC9E151DA419380006369F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E141DA419380006369F /* FirstViewController.swift */; };
-		A3CC9E171DA419380006369F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E161DA419380006369F /* SecondViewController.swift */; };
 		A3CC9E1A1DA419380006369F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CC9E181DA419380006369F /* Main.storyboard */; };
 		A3CC9E1C1DA419380006369F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CC9E1B1DA419380006369F /* Assets.xcassets */; };
 		A3CC9E1F1DA419380006369F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CC9E1D1DA419380006369F /* LaunchScreen.storyboard */; };
+		A3CC9E2C1DA41A630006369F /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E2A1DA41A630006369F /* FlightViewController.swift */; };
+		A3CC9E2E1DA41A710006369F /* BusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E2D1DA41A710006369F /* BusViewController.swift */; };
+		A3CC9E301DA41A7C0006369F /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E2F1DA41A7C0006369F /* TrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3CC9E0F1DA419380006369F /* GoEuroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CC9E121DA419380006369F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3CC9E141DA419380006369F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A3CC9E161DA419380006369F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A3CC9E191DA419380006369F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3CC9E1B1DA419380006369F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CC9E1E1DA419380006369F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3CC9E201DA419380006369F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CC9E2A1DA41A630006369F /* FlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
+		A3CC9E2D1DA41A710006369F /* BusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusViewController.swift; sourceTree = "<group>"; };
+		A3CC9E2F1DA41A7C0006369F /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		A3CC9E111DA419380006369F /* GoEuroTest */ = {
 			isa = PBXGroup;
 			children = (
+				A3CC9E281DA41A630006369F /* Bus */,
+				A3CC9E291DA41A630006369F /* Flight */,
+				A3CC9E2B1DA41A630006369F /* Train */,
 				A3CC9E121DA419380006369F /* AppDelegate.swift */,
-				A3CC9E141DA419380006369F /* FirstViewController.swift */,
-				A3CC9E161DA419380006369F /* SecondViewController.swift */,
 				A3CC9E181DA419380006369F /* Main.storyboard */,
 				A3CC9E1B1DA419380006369F /* Assets.xcassets */,
 				A3CC9E1D1DA419380006369F /* LaunchScreen.storyboard */,
 				A3CC9E201DA419380006369F /* Info.plist */,
 			);
 			path = GoEuroTest;
+			sourceTree = "<group>";
+		};
+		A3CC9E281DA41A630006369F /* Bus */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC9E2D1DA41A710006369F /* BusViewController.swift */,
+			);
+			path = Bus;
+			sourceTree = "<group>";
+		};
+		A3CC9E291DA41A630006369F /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC9E2A1DA41A630006369F /* FlightViewController.swift */,
+			);
+			path = Flight;
+			sourceTree = "<group>";
+		};
+		A3CC9E2B1DA41A630006369F /* Train */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC9E2F1DA41A7C0006369F /* TrainViewController.swift */,
+			);
+			path = Train;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3CC9E171DA419380006369F /* SecondViewController.swift in Sources */,
 				A3CC9E131DA419380006369F /* AppDelegate.swift in Sources */,
-				A3CC9E151DA419380006369F /* FirstViewController.swift in Sources */,
+				A3CC9E2E1DA41A710006369F /* BusViewController.swift in Sources */,
+				A3CC9E2C1DA41A630006369F /* FlightViewController.swift in Sources */,
+				A3CC9E301DA41A7C0006369F /* TrainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
