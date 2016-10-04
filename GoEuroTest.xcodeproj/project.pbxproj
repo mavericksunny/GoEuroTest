@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		807551AF6DDB6AFE397E1DE5 /* Pods_GoEuroTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656B8E217B4234327CC1AAC7 /* Pods_GoEuroTest.framework */; };
 		A3CC9E131DA419380006369F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC9E121DA419380006369F /* AppDelegate.swift */; };
 		A3CC9E1A1DA419380006369F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CC9E181DA419380006369F /* Main.storyboard */; };
 		A3CC9E1C1DA419380006369F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CC9E1B1DA419380006369F /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40CC39A04EFFDF36031E9DDE /* Pods-GoEuroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest.debug.xcconfig"; sourceTree = "<group>"; };
+		656B8E217B4234327CC1AAC7 /* Pods_GoEuroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoEuroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CC9E0F1DA419380006369F /* GoEuroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CC9E121DA419380006369F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3CC9E191DA419380006369F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		A3CC9E2A1DA41A630006369F /* FlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
 		A3CC9E2D1DA41A710006369F /* BusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusViewController.swift; sourceTree = "<group>"; };
 		A3CC9E2F1DA41A7C0006369F /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
+		EB94F36F08C5B556370AB22F /* Pods-GoEuroTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807551AF6DDB6AFE397E1DE5 /* Pods_GoEuroTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B9C78F7E4AE84BEA9C2E3F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40CC39A04EFFDF36031E9DDE /* Pods-GoEuroTest.debug.xcconfig */,
+				EB94F36F08C5B556370AB22F /* Pods-GoEuroTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		459D3B7BB5A4FB326BEC8D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656B8E217B4234327CC1AAC7 /* Pods_GoEuroTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3CC9E061DA419380006369F = {
 			isa = PBXGroup;
 			children = (
 				A3CC9E111DA419380006369F /* GoEuroTest */,
 				A3CC9E101DA419380006369F /* Products */,
+				1B9C78F7E4AE84BEA9C2E3F2 /* Pods */,
+				459D3B7BB5A4FB326BEC8D3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3CC9E231DA419380006369F /* Build configuration list for PBXNativeTarget "GoEuroTest" */;
 			buildPhases = (
+				39DA67F96206571D4BE34F33 /* [CP] Check Pods Manifest.lock */,
 				A3CC9E0B1DA419380006369F /* Sources */,
 				A3CC9E0C1DA419380006369F /* Frameworks */,
 				A3CC9E0D1DA419380006369F /* Resources */,
+				7B863F5AC819150F49ABDDD9 /* [CP] Embed Pods Frameworks */,
+				DFCA81A181CDB76FD124FC75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +186,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DA67F96206571D4BE34F33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B863F5AC819150F49ABDDD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFCA81A181CDB76FD124FC75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3CC9E0B1DA419380006369F /* Sources */ = {
@@ -279,6 +354,7 @@
 		};
 		A3CC9E241DA419380006369F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40CC39A04EFFDF36031E9DDE /* Pods-GoEuroTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoEuroTest/Info.plist;
@@ -290,6 +366,7 @@
 		};
 		A3CC9E251DA419380006369F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB94F36F08C5B556370AB22F /* Pods-GoEuroTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoEuroTest/Info.plist;
@@ -318,6 +395,7 @@
 				A3CC9E251DA419380006369F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
